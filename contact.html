@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WAVY</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="wavy_white.png" style="width: 15%;height: auto;">
+            <h1 class="catch">Ride the Wave &emsp;波に乗ろう</h1>
+        </div>
+
+        <div class="bar-area">
+          <img src="main_bar.png" class="main-bar" alt="" style="width: 100%;height: auto;">
+          <div class="menu-btn" id="menuBtn">menu ＋</div>
+        </div>
+
+        
+        <div class="header-right">
+        <nav class="side-menu" id="sideMenu">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <ul>
+              <li><a href="news.html">NEWS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+              <li><a href="q&a.html">Q&amp;A</a></li>
+              <li><a href="index.html">HOME</a></li>
+            </ul>
+        </nav>
+        <div class="overlay" id="overlay"></div>
+
+        <main class="contact-wrap">
+    <section class="contact-card">
+      <h2 class="contact-title">お問い合わせ</h2>
+      <p class="contact-lead">
+        体験・出演依頼・質問など、お気軽に送ってください。
+      </p>
+
+
+      <form id="contactForm" class="contact-form" action="" method="POST" novalidate>
+        <div class="field">
+          <label for="name">お名前 <span class="req">必須</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" required placeholder="例）林 隆希" />
+          <p class="error" id="err-name" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="contact">連絡先（メール or 電話） <span class="req">必須</span></label>
+          <input id="contact" name="contact" type="text" autocomplete="email" required
+                 placeholder="例）wavy@example.com / 090-1234-5678" />
+          <p class="hint">※どちらでもOK。返信できるものを入力してください。</p>
+          <p class="error" id="err-contact" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="message">ご要望 <span class="req">必須</span></label>
+          <textarea id="message" name="message" rows="6" required
+                    placeholder="例）体験参加希望です。日時の候補は…"></textarea>
+          <p class="error" id="err-message" aria-live="polite"></p>
+        </div>
+
+        <button class="submit-btn" type="submit">送信する</button>
+
+        <p class="form-note" id="formNote" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="menu.js"></script>
+
+        <div class="footer">
+            <img src="wavy_white.png" style="width: 5%;height: auto;">
+            <h3 class="WavyFoot">〒350-8585 埼玉県川越市鯨井2100コミュニティーセンター多目的室2</h3>
+            <img src="toyo_logo.png" style="width: 17%;height: auto;">
+             <h3 class="WavyFoot">Copyright © Toyo University. All Rights Reserved.</h3>
+        </div>
+
+        <script src="menu.js"></script>
+    </body>
+</html>

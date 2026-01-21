@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WAVY</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="wavy_white.png" style="width: 15%;height: auto;">
+            <h1 class="catch">Ride the Wave &emsp;波に乗ろう</h1>
+        </div>
+
+        <div class="bar-area">
+          <img src="main_bar.png" class="main-bar" alt="" style="width: 100%;height: auto;">
+          <div class="menu-btn" id="menuBtn">menu ＋</div>
+        </div>
+
+        
+        <div class="header-right">
+        <nav class="side-menu" id="sideMenu">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <ul>
+              <li><a href="news.html">NEWS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+              <li><a href="q&a.html">Q&amp;A</a></li>
+              <li><a href="index.html">HOME</a></li>
+            </ul>
+        </nav>
+        <div class="overlay" id="overlay"></div>
+
+        <div class="main">
+            <h1 class="what">WHAT'S "Wavy"</h1>
+            <img src="sub_bar.png" style="width: 30%;height: 1%;">
+            <div class="wavy-ex">2023年に創設された東洋大学川越キャンパスのダンスサークル。現在96名の学生が在籍中。</div>
+            <video src="IMG_3008.MP4" controls></video>
+            <h1 class="活動内容">活動内容</h1>
+            <img src="sub_bar.png" style="width: 30%;height: 1%;">
+            <div class="activity-slider coverflow" id="activitySlider">
+              <button class="activity-arrow left" id="activityPrev" aria-label="prev">‹</button>
+
+                <div class="activity-viewport">
+                  <div class="activity-window">
+                      <div class="activity-slide"><img src="画像1.jpg" alt="活動写真1"></div>
+                      <div class="activity-slide"><img src="画像2.jpg" alt="活動写真2"></div>
+                      <div class="activity-slide"><img src="画像3.jpg" alt="活動写真3"></div>
+                  </div>
+                </div>
+
+              <button class="activity-arrow right" id="activityNext" aria-label="next">›</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="wavy_white.png" style="width: 5%;height: auto;">
+            <h3 class="WavyFoot">〒350-8585 埼玉県川越市鯨井2100コミュニティーセンター多目的室2</h3>
+            <img src="toyo_logo.png" style="width: 17%;height: auto;">
+             <h3 class="WavyFoot">Copyright © Toyo University. All Rights Reserved.</h3>
+        </div>
+
+        <script src="menu.js"></script>
+    </body>
+</html>
